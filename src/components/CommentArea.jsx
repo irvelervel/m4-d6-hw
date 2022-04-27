@@ -15,9 +15,10 @@ const CommentArea = ({asin}) => {
             setLoading(true);
             
             try {
-                let response = await fetch('https://striveschool-api.herokuapp.com/api/comments/' + this.props.asin, {
+                let response = await fetch('https://striveschool-api.herokuapp.com/api/comments/' + asin, {
                     headers: {
-                        Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjU2YzZmYmE5MDIzOTAwMTVkOTY2MTAiLCJpYXQiOjE2NTEwNjQyNjksImV4cCI6MTY1MjI3Mzg2OX0.KKqrEZnuuSGT1_62al1D8xJsHjZo-ifoNJI1RjsYHck'
+
+                        Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjU2YzZmYmE5MDIzOTAwMTVkOTY2MTAiLCJpYXQiOjE2NTEwNzI4MzksImV4cCI6MTY1MjI4MjQzOX0.-d8OqNTqgch0ZQPU4ylFbBGR5WAgNDe2r-aKv15mNlA'
                     }
                 })
               console.log(response);
