@@ -1,10 +1,10 @@
 import { ListGroup } from 'react-bootstrap'
 import SingleComment from './SingleComment'
 
-const CommentList = ({ commentsToShow }) => (
+const CommentList = ({ showComments }) => (
     <ListGroup style={{ color: 'black' }}>
         {
-            commentsToShow.map(comment => (
+            showComments.map(comment => (
                 <SingleComment comment={comment} key={comment._id} />
             ))
         }
